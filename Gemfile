@@ -16,6 +16,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use bootstrap library for styles
 gem 'bootstrap-sass','3.3.1'
+# Use font awesome library for fonts-icons
+gem 'font-awesome-sass','4.2.0'
 
 
 # Use jquery as the JavaScript library
