@@ -18,7 +18,7 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to root_path, class: 'navbar-brand' do %>
-      	<i class="fa fa-twitter on fa-square-o"></i> 
+      	<i class="fa fa-laptop"></i> 
       	Iambradley
       <% end %>
     </div>
@@ -31,7 +31,12 @@
 </nav>
 
 <div class='container'>
-	<%= yield %>
+  <% flash.each do |key, value | %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
+  	
+    <%= yield %>
+
 </div>
 
 
